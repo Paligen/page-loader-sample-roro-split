@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Page Loader Animation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Progress indicator -->
+    <div class="loader">
+      <div class="letter r" id="left-r">R</div>
+      <div class="letter o" id="left-o">o</div>
+      <div class="letter r" id="right-r">R</div>
+      <div class="letter o" id="right-o">o</div>
+    </div>
+    <div class="message">Let's have a look</div>
+    <!-- Main -->
+    <div class="main-content">
+      <p>
+        <q>The only way to do great work is to love what you do.</q>
+        <p>Steve Jobs</p>
+      </p>
+    </div>
+  </body>
+</html>

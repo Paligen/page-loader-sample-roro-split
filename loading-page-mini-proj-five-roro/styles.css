@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Teko", Arial, sans-serif;
+  font-size: 2.4rem;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  z-index: 1000;
+}
+
+.letter {
+  font-size: 20vmax;
+  font-weight: 400;
+  display: inline-block;
+
+  /* Text color the glass effect */
+  color: #000;
+
+  /* Text for the inner shadow effect */
+  /* color: transparent; */
+
+  transform: scale(0.5);
+  opacity: 0;
+
+  /* Shadow for glass effect */
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 0 1rem rgba(0, 0, 0, 0.5);
+
+  /* Inner shadow effect */
+  /* text-shadow: 0.02rem 0.02rem 0.2rem rgba(255, 255, 255, 0.744), 0 0 rgb(0, 0, 0); */
+
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.letter.r {
+  text-transform: uppercase;
+  animation: colorChange 2s infinite alternate;
+}
+
+.letter.o {
+  text-transform: lowercase;
+  animation: colorChange 2s infinite alternate;
+}
+
+.message {
+  display: none;
+}
+
+.main-content {
+  display: none;
+  /* text-align: center; */
+  max-width: 75vw;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* @keyframes colorChange {
+  0% {
+    color: #61A0AF80;
+  }
+  25% {
+    color: #96C9DC80;
+  }
+  50% {
+    color: #f06c9b80;
+  }
+
+  75% {
+    color: #F9B9B780;
+  }
+
+  100% {
+    color: #F5D49180;
+  }
+} */
