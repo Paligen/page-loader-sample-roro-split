@@ -47,7 +47,7 @@ function animateLetters() {
   );
 
   // Stop bounce animation before split
-  gsap.delayedCall(7, () => {
+  gsap.delayedCall(6.8, () => {
     bounceAnimation.kill();
   });
 
